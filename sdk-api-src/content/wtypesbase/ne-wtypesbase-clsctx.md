@@ -190,9 +190,7 @@ Off-machine activations fail when they use this flag.
 
 Used for loading Proxy/Stub DLLs.
 
-
 <div class="alert"><b>Note</b>  This flag is reserved for internal use and is not intended to be used directly from your code.</div>
-<div> </div>
 
 ## -remarks
 
@@ -240,7 +238,7 @@ Usually, a client will not care whether it uses a 32-bit or a 64-bit version of 
 
 
 
-A server can specify its own architecture preference via the PreferredServerBitness registry key, but the client's preference, specified via a CLSCTX_ACTIVATE_32_BIT_SERVER or CLSCTX_ACTIVATE_64_BIT_SERVER flag, will override the server's preference. If the client does not specify a preference, then the server's preference will be used.
+A server can specify its own architecture preference via the <a href="/windows/desktop/com/preferredserverbitness">PreferredServerBitness</a> registry key, but the client's preference, specified via a CLSCTX_ACTIVATE_32_BIT_SERVER or CLSCTX_ACTIVATE_64_BIT_SERVER flag, will override the server's preference. If the client does not specify a preference, then the server's preference will be used.
 
 
 
@@ -361,14 +359,7 @@ The flags CLSCTX_ACTIVATE_32_BIT_SERVER and CLSCTX_ACTIVATE_64_BIT_SERVER flow a
 <td>64-bit server</td>
 </tr>
 </table>
- 
 
-<b>PreferredServerBitness</b>
-<a href="/windows/desktop/com/preferredserverbitness">PreferredServerBitness</a>
-<b>PreferredServerBitness</b>
-<b>PreferredServerBitness</b>
-<b>PreferredServerBitness</b>
-<b>PreferredServerBitness</b>
 
 ## -see-also
 
