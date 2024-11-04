@@ -75,7 +75,7 @@ If <i>BaseAddress</i> is not <b>NULL</b>, then any provided <a href="/windows/wi
 
 The offset from the beginning of the section.
 
-The offset must be 64k aligned or aligned to GetLargePageMinimum when MEM_LARGE_PAGES is used in AllocationType. Furthermore offset must be page alligned the the underlying page size granted by VirtualAlloc2 when MEM_REPLACE_PLACEHOLDER is used in AllocationType.
+The offset must be 64k aligned or aligned to GetLargePageMinimum when MEM_LARGE_PAGES is used in AllocationType. Furthermore, the offset must be page-aligned to the underlying page size granted by VirtualAlloc2 when MEM_REPLACE_PLACEHOLDER is used in AllocationType.
 
 ### -param ViewSize [in]
 
