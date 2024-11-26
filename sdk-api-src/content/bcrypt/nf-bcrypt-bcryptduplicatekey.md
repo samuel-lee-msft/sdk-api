@@ -65,7 +65,7 @@ A pointer to a <b>BCRYPT_KEY_HANDLE</b> variable that receives the handle of the
 
 ### -param pbKeyObject [out]
 
-A pointer to a buffer that receives the duplicate key object. The <i>cbKeyObject</i> parameter contains the size of this buffer. The required size of this buffer can be obtained by calling the <a href="/windows/desktop/api/bcrypt/nf-bcrypt-bcryptgetproperty">BCryptGetProperty</a> function to get the <b>BCRYPT_OBJECT_LENGTH</b> property. This will provide the size of the key object for the specified algorithm.
+An ***optional*** pointer to a buffer that receives the duplicate key object. The <i>cbKeyObject</i> parameter contains the size of this buffer. The required size of this buffer can be obtained by calling the <a href="/windows/desktop/api/bcrypt/nf-bcrypt-bcryptgetproperty">BCryptGetProperty</a> function to get the <b>BCRYPT_OBJECT_LENGTH</b> property. This will provide the size of the key object for the specified algorithm.
 
 This memory can only be freed after the <i>phNewKey</i> key handle is destroyed.
 
